@@ -36,7 +36,7 @@ const render = (poem, link) => {
 	<div class="poem" itemscope itemtype="http://schema.org/CreativeWork">
 		${poem}
 		<div class="attribution" itemprop="author">
-			— <a href="${link}">Poem_for_your_sprog</a>
+			— <a href="${link}">u/Poem_for_your_sprog</a>
 		</div>
 	</div>
 </body>
