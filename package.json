@@ -1,7 +1,7 @@
 {
   "name": "poem_for_your_sprog",
   "version": "1.0.0",
-  "description": "",
+  "description": "Show a random poem for your sprog.",
   "main": "index.js",
   "private": true,
   "scripts": {
