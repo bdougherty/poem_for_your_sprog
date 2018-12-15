@@ -1,0 +1,14 @@
+{
+	"version": 2,
+	"alias": "poemforyoursprog.now.sh",
+	"builds": [
+		{
+			"src": "index.js",
+			"use": "@now/node"
+		},
+		{
+			"src": "style.css",
+			"use": "@now/static"
+		}
+	]
+}

@@ -1,0 +1,51 @@
+:root {
+	--background: #e2f4f9;
+	--color: #000;
+	--link: #006a85;
+	--link-hover: #fff;
+}
+
+.lime {
+	--background: #e8f9e2;
+	--color: #000;
+	--link: #288600;
+	--link-hover: #fff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: var(--color);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 1.1em;
+	width: 100vw;
+	min-height: 100vh;
+	margin: 0;
+	padding: 10vmin 15vmin;
+	background-color: var(--background);
+}
+
+.centered {
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.poem {
+	margin-bottom: 2em;
+	line-height: 1.4;
+}
+
+a {
+	text-decoration: none;
+	color: var(--link);
+	border-radius: 2px;
+}
+
+a:hover {
+	color: var(--link-hover);
+	background-color: var(--link);
+}
