@@ -1,5 +1,5 @@
-const got = require('got');
-const he = require('he');
+import got from 'got';
+import he from 'he';
 
 const getPoems = async () => {
 	const { data } = await got('https://api.reddit.com/user/poem_for_your_sprog/comments?limit=50').json();
@@ -20,8 +20,7 @@ const getRandomPoem = async () => {
 	return poems[index];
 };
 
-const render = (poem, link) => {
-	return `<!DOCTYPE html>
+const render = (poem, link) => `<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -39,12 +38,13 @@ const render = (poem, link) => {
 	</div>
 </body>
 </html>`;
-};
 
-module.exports = async (req, res) => {
+const handler = async (_, response) => {
 	const poem = await getRandomPoem();
 	const content = render(he.decode(poem.content), poem.link);
 
-	res.setHeader('Content-Type', 'text/html');
-	res.end(content);
+	response.setHeader('Content-Type', 'text/html');
+	response.end(content);
 };
+
+export default handler;

@@ -4,6 +4,7 @@
   "description": "Show a random poem for your sprog.",
   "main": "index.js",
   "private": true,
+  "type": "module",
   "scripts": {
     "test": "xo"
   },
