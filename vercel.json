@@ -1,6 +1,4 @@
 {
-	"version": 2,
-	"alias": "poemforyoursprog.now.sh",
 	"builds": [
 		{
 			"src": "index.js",
