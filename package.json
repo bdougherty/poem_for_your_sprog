@@ -11,14 +11,25 @@
   "author": "Brad Dougherty <me@brad.is>",
   "license": "MIT",
   "dependencies": {
-    "got": "^9.4.0",
+    "got": "^11.8.2",
     "he": "^1.2.0"
   },
   "devDependencies": {
-    "eslint-config-bdougherty": "^5.1.1",
-    "xo": "^0.23.0"
+    "vercel": "^23.1.2",
+    "xo": "^0.44.0"
   },
   "xo": {
-    "extends": "bdougherty"
+    "rules": {
+      "arrow-parens": [
+        "error",
+        "always"
+      ],
+      "capitalized-comments": "off",
+      "comma-dangle": "off",
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ]
+    }
   }
 }

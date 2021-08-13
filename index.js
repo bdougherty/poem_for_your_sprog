@@ -2,11 +2,9 @@ const got = require('got');
 const he = require('he');
 
 const getPoems = async () => {
-	const { body } = await got('https://api.reddit.com/user/poem_for_your_sprog/comments?limit=50', {
-		json: true
-	});
+	const { data } = await got('https://api.reddit.com/user/poem_for_your_sprog/comments?limit=50').json();
 
-	return body.data.children.map(({ data }) => {
+	return data.children.map(({ data }) => {
 		const { body_html: content, permalink } = data;
 
 		return {
