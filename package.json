@@ -12,7 +12,7 @@
   "author": "Brad Dougherty <me@brad.is>",
   "license": "MIT",
   "dependencies": {
-    "got": "^11.8.2",
+    "got": "^11.8.5",
     "he": "^1.2.0"
   },
   "devDependencies": {
