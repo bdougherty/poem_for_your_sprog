@@ -12,11 +12,11 @@
   "author": "Brad Dougherty <me@brad.is>",
   "license": "MIT",
   "dependencies": {
-    "got": "^11.8.2",
+    "got": "^12.5.3",
     "he": "^1.2.0"
   },
   "devDependencies": {
-    "vercel": "^23.1.2",
+    "vercel": "^28.15.3",
     "xo": "^0.44.0"
   },
   "xo": {
