@@ -5,6 +5,9 @@
   "main": "index.js",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "test": "xo"
   },
@@ -12,12 +15,12 @@
   "author": "Brad Dougherty <me@brad.is>",
   "license": "MIT",
   "dependencies": {
-    "got": "^11.8.2",
+    "got": "^14.4.2",
     "he": "^1.2.0"
   },
   "devDependencies": {
-    "vercel": "^23.1.2",
-    "xo": "^0.44.0"
+    "vercel": "^37.4.0",
+    "xo": "^0.59.3"
   },
   "xo": {
     "rules": {
