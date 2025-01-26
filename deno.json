@@ -1,0 +1,11 @@
+{
+	"fmt": {
+		"useTabs": true,
+		"singleQuote": true,
+		"semiColons": true
+	},
+	"tasks": {
+		"dev": "deno run --allow-read=style.css --allow-net=0.0.0.0:8000,api.reddit.com --watch main.ts",
+		"start": "deno run --allow-read=style.css --allow-net=0.0.0.0:8000,api.reddit.com main.ts"
+	}
+}
