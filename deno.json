@@ -5,7 +5,7 @@
 		"semiColons": true
 	},
 	"tasks": {
-		"dev": "deno run --allow-read=style.css --allow-net=0.0.0.0:8000,api.reddit.com --watch main.ts",
-		"start": "deno run --allow-read=style.css --allow-net=0.0.0.0:8000,api.reddit.com main.ts"
+		"dev": "deno run --allow-read=style.css --allow-net=0.0.0.0:8000,api.reddit.com --env-file=.env --allow-env --watch main.ts",
+		"start": "deno run --allow-read=style.css --allow-net=0.0.0.0:8000,api.reddit.com --allow-env main.ts"
 	}
 }

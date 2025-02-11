@@ -12,7 +12,11 @@ interface RedditResponse {
 }
 
 const getPoems = async () => {
-	const response = await fetch('https://api.reddit.com/user/poem_for_your_sprog/comments?limit=50');
+	const response = await fetch('https://api.reddit.com/user/poem_for_your_sprog/comments?limit=50', {
+		headers: {
+			'User-Agent': Deno.env.get('USER_AGENT') ?? 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Safari/605.1.15'
+		}
+	});
 	const { data } = await response.json() as RedditResponse;
 
 	return data.children.map(({ data }) => {
